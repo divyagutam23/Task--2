@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive To-Do List with Validation</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Form</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <div class="error" id="nameError">Please enter your name.</div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <div class="error" id="emailError">Please enter a valid email.</div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+      <div class="error" id="messageError">Please enter your message.</div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <h2>To-Do List</h2>
+    <div id="todo">
+      <input type="text" id="taskInput" placeholder="Add new task" />
+      <button class="add-btn" id="addTaskBtn">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
